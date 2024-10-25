@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validated Form</title>
+  </head>
+  <body>
+    <form style="width: 200px" action="./result.html">
+      <h2 style="margin-top: 2px; margin-bottom: 5px">Registration form</h2>
+      <div style="margin-bottom: 5px; display: flex; flex-direction: column">
+        <label for="fullName">Full Name:</label>
+        <input
+          type="text"
+          id="fullName"
+          name="full-name"
+          placeholder="Enter full name"
+          required
+        />
+      </div>
+
+      <div style="margin-bottom: 5px; display: flex; flex-direction: column">
+        <label for="age">Age:</label>
+        <input
+          type="number"
+          id="age"
+          name="age"
+          min="1"
+          placeholder="Enter age"
+          required
+        />
+      </div>
+
+      <div style="margin-bottom: 5px; display: flex; flex-direction: column">
+        <label for="state">State:</label>
+        <select name="state" id="state" style="width: 100%" required>
+          <option disabled selected>Select one</option>
+          <option value="nsw">New South Wales</option>
+          <option value="vic">Victoria</option>
+          <option value="qld">Queensland</option>
+          <option value="wa">Western Australia</option>
+          <option value="sa">South Australia</option>
+        </select>
+      </div>
+
+      <div style="margin-bottom: 5px; display: flex; flex-direction: column">
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter email"
+          required
+        />
+      </div>
+
+      <div style="margin-bottom: 5px; display: flex; flex-direction: column">
+        <label for="phone">Phone Number:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone-number"
+          placeholder="Enter phone number"
+          required
+        />
+      </div>
+
+      <div
+        style="
+          margin-bottom: 5px;
+          margin-top: 10px;
+          display: flex;
+          flex-direction: column;
+        "
+      >
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Leave a message"
+          minlength="10"
+          maxlength="500"
+          required
+        ></textarea>
+      </div>
+
+      <button type="submit" style="margin-top: 0.25rem; width: 100%">
+        Submit
+      </button>
+    </form>
+  </body>
+</html>
