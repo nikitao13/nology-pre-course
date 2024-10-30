@@ -1,0 +1,56 @@
+#content {
+  width: 600px;
+  margin: auto;
+  border: 3px solid black;
+  height: 90vh;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.container-1 {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.container-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  gap: 20px;
+  width: 100%;
+}
+
+.card {
+  border: 1px solid #ccc;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+}
+
+#card-1,
+#card-8 {
+  background-color: lightblue;
+}
+
+#card-3,
+#card-6 {
+  background-color: lightgreen;
+}
+
+#card-2,
+#card-7 {
+  background-color: lightsalmon;
+}
+
+#card-4,
+#card-5 {
+  background-color: lightslategray;
+}
