@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 600px;
+  margin: 15px auto 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+}
+
+#blue {
+  background-color: lightblue;
+}
+
+#orange {
+  background-color: orange;
+}
+
+#pink {
+  background-color: pink;
+}
+
+#red {
+  background-color: red;
+}
