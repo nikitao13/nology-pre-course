@@ -1,0 +1,118 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d8eaf2;
+  height: 100vh;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+}
+
+main {
+  display: flex;
+  width: 75%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+header h1 {
+  text-align: center;
+  color: #3a5377;
+}
+
+.task-overdue,
+.task-pending,
+.task-completed {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 1em 0 1em;
+  border-radius: 7px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  height: 500px;
+  width: 31%;
+}
+.task-overdue h2,
+.task-pending h2,
+.task-completed h2 {
+  font-size: 1.1em;
+}
+
+.task-overdue h2 {
+  color: #cf2e2e;
+}
+
+.task-pending h2 {
+  color: #4173ba;
+}
+
+.task-completed h2 {
+  color: #5dcd5d;
+}
+
+.task-overdue .task-item {
+  background-color: rgba(207, 46, 46, 0.2);
+  color: #cf2e2e;
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.task-pending .task-item {
+  background-color: rgba(65, 115, 186, 0.2);
+  color: #4173ba;
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.task-completed .task-item {
+  background-color: rgba(93, 205, 93, 0.2);
+  color: #5dcd5d;
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.icon {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.task-date {
+  font-size: 12px;
+  margin-top: 5px;
+  color: black;
+}
+
+.fa-solid {
+  font-size: 25px;
+}
+
+/*# sourceMappingURL=style.css.map */
