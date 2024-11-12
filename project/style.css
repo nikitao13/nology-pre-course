@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  padding-left: 4em;
+  padding-right: 4em;
+}
+nav .fa-solid {
+  font-size: 2em;
+  color: #FAA196;
+}
+
+.banner {
+  display: flex;
+  width: 100%;
+  height: 90vh;
+}
+.banner .right {
+  height: 100%;
+  width: 50%;
+  background-image: url("./images/hero_image.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.banner .left {
+  height: 100%;
+  width: 50%;
+  background-color: #689572;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 3em 0 3em;
+  gap: 15px;
+}
+.banner .banner-title {
+  font-family: "Rammetto One", sans-serif;
+  color: white;
+  font-size: 3.5em;
+  text-align: left;
+  margin-bottom: 0;
+  width: 80%;
+}
+.banner .banner-sub-title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  color: white;
+  font-size: 22px;
+}
+.banner .banner-btn button {
+  all: unset;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  border: 2px solid white;
+  padding: 10px 30px 10px 30px;
+  font-size: 16px;
+}
+
+.nav-icon {
+  width: min-content;
+}
+
+.nav-links {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  display: flex;
+  gap: 50px;
+  font-size: 1em;
+  color: #404040;
+}
+
+.menu {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+.menu .banner-title {
+  font-family: "Rammetto One", sans-serif;
+  color: #FAA196;
+  font-size: 3.5em;
+}
+
+.reviews {
+  padding: 50px 0 50px 0;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  background-color: #FAA196;
+}
+.reviews .banner-title {
+  font-family: "Rammetto One", sans-serif;
+  color: white;
+  font-size: 3.5em;
+  margin: auto;
+}
+.reviews .review {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  padding: 10px 50px 10px 50px;
+  border: 2px solid white;
+  width: 40%;
+  font-size: 16px;
+  color: #404040;
+}
+.reviews .review-container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.reviews .review-info {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+.reviews .quotes {
+  padding: 10px;
+  font-size: 22px;
+}
+
+footer {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  width: 100%;
+  background-color: #82A289;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  padding-left: 4.5em;
+  padding-right: 4.5em;
+}
+footer .fa-solid {
+  font-size: 1.75em;
+  color: white;
+}
+footer .footer-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+  font-size: 16px;
+  height: 100%;
+}
+footer .fa-brands {
+  font-size: 1.75em;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
