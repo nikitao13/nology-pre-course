@@ -3,3 +3,39 @@
   font-weight: $weight;
   font-style: $style;
 }
+
+@mixin banner-title($color) {
+  font-family: "Rammetto One", sans-serif;
+  color: $color;
+  font-size: 3.5em;
+  margin: auto;
+}
+
+@mixin full-width-section($height: auto) {
+  width: 100%;
+  height: $height;
+  margin: auto;
+}
+
+@mixin horizontal-padding($left: 4em, $right: 4em) {
+  padding-left: $left;
+  padding-right: $right;
+}
+
+@mixin icon($size, $color) {
+  font-size: $size;
+  color: $color;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-center($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}

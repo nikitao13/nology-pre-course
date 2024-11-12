@@ -9,14 +9,15 @@ body {
 }
 
 nav {
-  display: flex;
   width: 100%;
-  background-color: white;
-  justify-content: space-between;
-  align-items: center;
   height: 10vh;
+  margin: auto;
   padding-left: 4em;
   padding-right: 4em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
 }
 nav .fa-solid {
   font-size: 2em;
@@ -27,6 +28,7 @@ nav .fa-solid {
   display: flex;
   width: 100%;
   height: 90vh;
+  margin: auto;
 }
 .banner .right {
   height: 100%;
@@ -43,15 +45,18 @@ nav .fa-solid {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 3em 0 3em;
+  align-items: center;
+  align-items: flex-start;
+  padding: 0 3em;
   gap: 15px;
 }
 .banner .banner-title {
   font-family: "Rammetto One", sans-serif;
   color: white;
   font-size: 3.5em;
+  margin: auto;
+  margin: 0;
   text-align: left;
-  margin-bottom: 0;
   width: 80%;
 }
 .banner .banner-sub-title {
@@ -65,12 +70,12 @@ nav .fa-solid {
 }
 .banner .banner-btn button {
   all: unset;
-  color: white;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-style: normal;
+  color: white;
   border: 2px solid white;
-  padding: 10px 30px 10px 30px;
+  padding: 10px 30px;
   font-size: 16px;
 }
 
@@ -83,28 +88,37 @@ nav .fa-solid {
   font-weight: 700;
   font-style: normal;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 50px;
   font-size: 1em;
   color: #404040;
 }
 
 .menu {
-  padding: 15px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding: 15px;
 }
 .menu .banner-title {
   font-family: "Rammetto One", sans-serif;
   color: #FAA196;
   font-size: 3.5em;
+  margin: auto;
 }
 
 .reviews {
-  padding: 50px 0 50px 0;
+  width: 100%;
+  height: 80vh;
+  margin: auto;
   display: flex;
   flex-direction: column;
-  margin: auto;
   justify-content: center;
+  align-items: center;
+  padding: 50px 0;
   background-color: #FAA196;
 }
 .reviews .banner-title {
@@ -117,17 +131,18 @@ nav .fa-solid {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-style: italic;
-  padding: 10px 50px 10px 50px;
+  padding: 10px 50px;
   border: 2px solid white;
   width: 40%;
   font-size: 16px;
   color: #404040;
 }
 .reviews .review-container {
-  width: 80%;
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  margin: auto;
+  align-items: center;
+  width: 80%;
   flex-wrap: wrap;
   gap: 15px;
 }
@@ -149,14 +164,15 @@ footer {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
-  display: flex;
-  width: 100%;
-  background-color: #82A289;
-  justify-content: space-between;
-  align-items: center;
-  height: 10vh;
   padding-left: 4.5em;
   padding-right: 4.5em;
+  width: 100%;
+  height: 10vh;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #82A289;
 }
 footer .fa-solid {
   font-size: 1.75em;
@@ -164,8 +180,9 @@ footer .fa-solid {
 }
 footer .footer-left {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   gap: 10px;
   color: white;
   font-size: 16px;

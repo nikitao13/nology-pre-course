@@ -6,56 +6,52 @@
 }
 
 body {
-  width: 100%;
-  height: auto;
-  margin: auto;
+  @include m.full-width-section;
 }
 
 nav {
-  display: flex;
-  width: 100%;
+  @include m.full-width-section(10vh);
+  @include m.horizontal-padding;
+  @include m.flex-between;
   background-color: white;
-  justify-content: space-between;
-  align-items: center;
-  height: 10vh;
-  padding-left: 4em;
-  padding-right: 4em;
+
   .fa-solid {
-    font-size: 2em;
-    color: v.$orange;
+    @include m.icon(2em, v.$orange);
   }
 }
 
 .banner {
   display: flex;
-  width: 100%;
-  height: 90vh;
+  @include m.full-width-section(90vh);
+
   .right {
     height: 100%;
     width: 50%;
-    background-image: url("./images/hero_image.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    background: {
+      image: url("./images/hero_image.jpg");
+      size: cover;
+      position: center center;
+      repeat: no-repeat;
+    }
   }
+
   .left {
     height: 100%;
     width: 50%;
     background-color: v.$green;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 3em 0 3em;
+    @include m.flex-center(column);
+    align-items: flex-start;
+    padding: 0 3em;
     gap: 15px;
   }
+
   .banner-title {
-    font-family: "Rammetto One", sans-serif;
-    color: white;
-    font-size: 3.5em;
+    @include m.banner-title(white);
+    margin: 0;
     text-align: left;
-    margin-bottom: 0;
     width: 80%;
   }
+
   .banner-sub-title {
     @include m.font-open-sans($weight: 300);
     margin-top: 0;
@@ -63,12 +59,13 @@ nav {
     color: white;
     font-size: 22px;
   }
+
   .banner-btn button {
     all: unset;
-    color: white;
     @include m.font-open-sans($weight: 600);
+    color: white;
     border: 2px solid white;
-    padding: 10px 30px 10px 30px;
+    padding: 10px 30px;
     font-size: 16px;
   }
 }
@@ -79,59 +76,53 @@ nav {
 
 .nav-links {
   @include m.font-open-sans($weight: 700);
-  display: flex;
+  @include m.flex-center;
   gap: 50px;
   font-size: 1em;
   color: v.$black;
 }
 
 .menu {
+  @include m.flex-center(column);
   padding: 15px;
-  display: flex;
-  justify-content: center;
+
   .banner-title {
-    font-family: "Rammetto One", sans-serif;
-    color: v.$orange;
-    font-size: 3.5em;
+    @include m.banner-title(v.$orange);
   }
 }
 
 .reviews {
-  padding: 50px 0 50px 0;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  justify-content: center;
+  @include m.full-width-section(80vh);
+  @include m.flex-center(column);
+  padding: 50px 0;
   background-color: v.$orange;
+
   .banner-title {
-    font-family: "Rammetto One", sans-serif;
-    color: white;
-    font-size: 3.5em;
-    margin: auto;
+    @include m.banner-title(white);
   }
+
   .review {
     @include m.font-open-sans($weight: 700, $style: italic);
-    padding: 10px 50px 10px 50px;
+    padding: 10px 50px;
     border: 2px solid white;
     width: 40%;
     font-size: 16px;
     color: v.$black;
   }
+
   .review-container {
+    @include m.flex-center;
     width: 80%;
-    display: flex;
-    justify-content: center;
-    margin: auto;
     flex-wrap: wrap;
     gap: 15px;
   }
+
   .review-info {
     @include m.font-open-sans($weight: 400);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include m.flex-between;
     font-size: 14px;
   }
+
   .quotes {
     padding: 10px;
     font-size: 22px;
@@ -140,29 +131,24 @@ nav {
 
 footer {
   @include m.font-open-sans($weight: 400);
-  display: flex;
-  width: 100%;
+  @include m.horizontal-padding(4.5em, 4.5em);
+  @include m.full-width-section(10vh);
+  @include m.flex-between;
   background-color: v.$pale-green;
-  justify-content: space-between;
-  align-items: center;
-  height: 10vh;
-  padding-left: 4.5em;
-  padding-right: 4.5em;
+
   .fa-solid {
-    font-size: 1.75em;
-    color: white;
+    @include m.icon(1.75em, white);
   }
+
   .footer-left {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include m.flex-center;
     gap: 10px;
     color: white;
     font-size: 16px;
     height: 100%;
   }
+
   .fa-brands {
-    font-size: 1.75em;
-    color: white;
+    @include m.icon(1.75em, white);
   }
 }
