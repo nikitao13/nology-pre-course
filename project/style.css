@@ -101,13 +101,41 @@ nav .fa-solid {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 50px;
+  height: 100%;
+  justify-content: flex-start;
 }
 .menu .banner-title {
   font-family: "Rammetto One", sans-serif;
   color: #FAA196;
   font-size: 3.5em;
   margin: auto;
+}
+.menu .menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 85%;
+  gap: 25px;
+  margin-top: 20px;
+  padding: 10px 5px 25px 5px;
+}
+
+details {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  background-color: #EBC9C4;
+  color: #404040;
+  padding: 15px 0 15px 15px;
+  font-size: 20px;
+}
+
+.detail-items {
+  margin-top: 15px;
+  display: flex;
+  gap: 20px;
+  width: 100%;
 }
 
 .reviews {
