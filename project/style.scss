@@ -82,7 +82,7 @@ nav {
     background-color: v.$green;
     @include m.flex-center(column);
     align-items: flex-start;
-    padding: 0 3em;
+    padding: 0 5em 0 5em;
     gap: 15px;
   }
 

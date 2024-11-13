@@ -60,6 +60,7 @@ nav .fa-solid {
   color: white;
   font-size: 3.5em;
   margin: auto;
+  width: max-content;
   margin: 0;
   text-align: left;
   width: 80%;
@@ -97,7 +98,7 @@ nav .fa-solid {
   justify-content: center;
   align-items: center;
   align-items: flex-start;
-  padding: 0 3em;
+  padding: 0 5em 0 5em;
   gap: 15px;
 }
 .banner .right {
@@ -132,6 +133,7 @@ nav .fa-solid {
   color: #faa196;
   font-size: 3.5em;
   margin: auto;
+  width: max-content;
 }
 
 .menu-item {
@@ -213,6 +215,7 @@ details summary:hover {
   color: white;
   font-size: 3.5em;
   margin: auto;
+  width: max-content;
 }
 .reviews .review {
   font-family: "Open Sans", sans-serif;
