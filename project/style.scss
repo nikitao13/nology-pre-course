@@ -178,7 +178,7 @@ details {
   margin-top: 15px;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -187,6 +187,7 @@ details {
 .reviews {
   @include m.full-width-section(70vh);
   @include m.flex-center(column);
+  height: min-content;
   padding: 50px 0;
   background-color: v.$orange;
 
@@ -208,7 +209,7 @@ details {
     width: 70%;
     flex-wrap: wrap;
     gap: 15px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
   }
 
   .review-info {
@@ -218,7 +219,7 @@ details {
   }
 
   .quotes {
-    padding: 10px;
+    padding: 5px;
     font-size: 22px;
   }
 }
@@ -245,4 +246,64 @@ footer {
   .fa-brands {
     @include m.icon(1.75em, white);
   }
+}
+
+// contact.html
+.contact {
+  @include m.font-open-sans($weight: 300);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  height: 90vh;
+  width: 100%;
+  padding-bottom: 150px;
+  background-color: v.$green;
+  h1 {
+    @include m.banner-title(white);
+    color: white;
+    font-size: 30px;
+    margin: 0;
+  }
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 30%;
+  min-height: 40%;
+  font-size: 14px;
+  border: 2px solid v.$pink;
+  background-color: v.$pink;
+  border-radius: 5px;
+  padding: 3px;
+  max-height: 60%;
+  max-width: 50%;
+}
+
+.text-area {
+  min-width: 100%;
+  min-height: 80px;
+  flex-grow: 1;
+  max-width: 50%;
+  width: 30%;
+  padding: 3px;
+  &:focus {
+    outline: none;
+  }
+}
+
+input {
+  padding: 3px;
+  min-height: 30px;
+}
+
+select {
+  padding: 2px;
+}
+
+button {
+  min-height: 30px;
 }
